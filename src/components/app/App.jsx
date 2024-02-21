@@ -1,12 +1,15 @@
-import './styles.css'
+import './styles.css';
+import Header from '../header/index';
+import Slider from '../slider';
 
 function App() {
-
   return (
-    <div>
-      123
+    <div className='app'>
+      <Header />
+      <Slider />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
+
