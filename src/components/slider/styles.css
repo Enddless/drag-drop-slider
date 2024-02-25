@@ -1,0 +1,25 @@
+@import '../../index.css';
+
+.galerry {
+  width: 30vw;
+  column-width: 2em;
+  gap: var(--gap);
+  will-change: transform;
+  transform: scale(7);
+  transition: transfrom 1s cubic-bezier(0.075, 1, 0.25, 1);
+}
+.galerry__item {
+  cursor: grab;
+  margin-bottom: var(--gap);
+  transform: scale(1.001);
+  will-change: transform;
+  transform: rotate(10deg);
+}
+.galerry__item:hover {
+  transform: scale(1.03);
+  transition: transform 1.5s ease;
+}
+.galerry__item img {
+  width: 100%;
+  display: block;
+}
